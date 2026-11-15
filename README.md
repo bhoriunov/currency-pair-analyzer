@@ -94,6 +94,46 @@ before launching the application.
 pytest
 ```
 
+## Installation and Usage
+
+Requires Python 3.12 and a Twelve Data API key.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/horiuboh/currency-pair-analyzer.git
+   cd currency-pair-analyzer
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python3.12 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Configure your API key:
+   ```bash
+   export TWELVE_DATA_API_KEY="YOUR_API_KEY"
+   ```
+
+5. Launch the application:
+   ```bash
+   python src/main.py
+   ```
+
+## Running Tests
+
+```bash
+python -m pytest -v
+```
+
+The application requires an internet connection to fetch
+exchange rate data. API keys are not included in the repository.
+
 ## Notes
 
 * The application uses the Twelve Data API for downloading exchange rate data.
